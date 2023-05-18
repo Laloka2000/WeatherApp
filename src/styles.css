@@ -1,1 +1,152 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #ff5050 33%, #0066ff 74%);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.container{
+  width: 400px;
+  height: 80vh;
+  background-color: aquamarine;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 10px 10px 10px  10px rgba(0, 0, 0, 0);
+}
+
+.upper-data{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+
+.upper-data img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.weather-data{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--shadow-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+
+
+.location{
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.temperature{
+  color: white;
+  font-size: 4em;
+  text-align: center;
+  font-weight: 900;
+}
+
+
+.more-info-label{
+  font-size: 20px;
+}
+
+.more-info-container{
+  flex: 1;
+  background-color: lavender;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-block{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.info-block-label{
+  width: 200%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.info-block-label span{
+  color: black;
+  font-size: 1em;
+}
+
+
+.info-block-value{
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: black
+}
+
+
+
+.search{
+  margin-bottom: 1em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 400;
+}
+
+.search input{
+  background-color: grey;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 2em;
+  font-size: 1em;
+  text-align: center;
+
+}
+
+
+
