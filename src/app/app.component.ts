@@ -9,22 +9,25 @@ import { weatherData } from './models/weather.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(private weatherService: WeatherService){
 
   }
 
   weatherData?: weatherData;
-  cityName: string = 'Wellington';
+  temperature: string = '';
 
   ngOnInit(): void{
-    this.getWeatherData(this.cityName);
+    this.getWeatherData(this.temperature);
   }
 
 
   onSubmit(){
-    this.getWeatherData(this.cityName);
-    this.cityName = '';
+    this.getWeatherData(this.temperature);
+    this.temperature = 'Washington';
   }
 
 
