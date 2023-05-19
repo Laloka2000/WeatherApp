@@ -27,7 +27,7 @@
           <span>Temperature</span>
         </div>
         <div class="info-block-value">
-          {{weatherData.main.temp}}°C
+          {{weatherData.main.temp | number: '1.0-0'}}°C
         </div>
       </div>
     </div>
